@@ -9,10 +9,10 @@
 }
 
 .container{
-    width: 1200px;
+    width: 1230px;
     height: 100%;
     margin: 0 auto;
-    font-size: 0.5em;
+    font-size: 10px;
     color: #999999;
 }
 
@@ -25,6 +25,9 @@
     text-decoration: none;
     color: #999999;
     line-height: 28px;
+}
+
+#left a{
     margin-left: 19px;
 }
 .container a:hover{
@@ -36,6 +39,7 @@ ul{
 
 #right{
     float:right;
+    position: relative;
 }
 
 .triangle{
@@ -49,3 +53,58 @@ ul{
     font-size: 0;
     line-height: 0;
 }
+
+.line{
+    height: 13px;
+    width: 2px;
+    border-left: 1px solid #cccccc;
+    position: absolute;
+    top: 8px;
+    margin-left: 6px;
+    left: 223px;
+}
+
+.dao{
+    /*width: 45px;*/
+    height: 28px;
+    margin-right: -2px;
+    padding: 6px 5px;
+}
+
+#right a{
+    margin: 0 6px;
+}
+
+.dao a{
+    margin-left: 4px!important;
+}
+
+img{
+    position: relative;
+    top: 2px;
+}
+.dao:hover{
+    background: #fff;
+}
+
+.my{
+    display: none;
+    position:absolute;
+    border: 1px solid #f2f2f2;
+    border-top: white;
+
+}
+
+.my > li:hover{
+    color: red;
+    text-decoration: underline;
+}
+
+.dao:hover > .my{
+    display: block;
+}
+
+.collect{
+    left: 165px;
+}
+
