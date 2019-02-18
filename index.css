@@ -54,6 +54,13 @@ ul{
     line-height: 0;
 }
 
+
+.dao:hover .triangle{
+    transform: rotate(180deg);
+    transform-origin: 3px 1.5px;
+    transition: transform .4s ease;
+}
+
 .line{
     height: 13px;
     width: 2px;
@@ -112,10 +119,30 @@ img{
 .my{
     left: -1px;
 }
+
 .collect{
     left: 163px;
 }
-
+.pho:hover{
+    background:transparent;
+}
+.phone{
+    padding: 15px;
+    border: 1px;
+    box-shadow: 0 -1px 2px 2px #ccc;
+    position: absolute;
+    top: 25px;
+    left: 186px;
+    background: #fff;
+}
+.phone .triangle{
+    transform: rotate(180deg);
+    border-width: 10px;
+    position: absolute;
+    top: 0px;
+    left: 95px;
+    border-color: #fff transparent transparent transparent;
+}
 .shop{
     left:294px;
     /*padding:5px;*/
@@ -142,4 +169,13 @@ img{
     height: 157px;
     position: absolute;
     left: -730px;
+}
+
+#all{
+    width: 1230px;
+    margin: 0 auto;
+}
+
+.search img{
+    margin-left:-45px;
 }
