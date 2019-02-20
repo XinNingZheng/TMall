@@ -2,6 +2,9 @@
     margin: 0;
     padding: 0;
 }
+body{
+    font:12px/1.5 tahoma,arial,"\5b8b\4f53"
+}
 #head{
     height: 28px;
     background: #f2f2f2;
@@ -169,8 +172,89 @@ img{
     height: 157px;
     position: absolute;
     left: -730px;
+    z-index: 100;
+}
+/*head结束*/
+
+
+/*side开始*/
+#side {
+    width: 35px;
+    background: #000;
+    position: fixed;
+    right: 0;
+    top: 0;
+    bottom: 0;
 }
 
+.logo{
+    height: 35px;
+    width: 35px;
+    padding-left:6px;
+    position: absolute;
+    top: 215px;
+}
+.logo:hover{
+    background: red;
+}
+#side img {
+    height: 14px;
+    width: 24px;
+    position: relative;
+    top: 10px;
+    margin: 0 auto;
+    margin-bottom: 15px;
+}
+
+#side .vip {
+    width: 90px;
+    height: 30px;
+    background: #999999;
+    color: #fff;
+    position: absolute;
+    top: 215px;
+    left: -150px;
+    text-align: center;
+    line-height: 30px;
+    -webkit-transition: opacity .3s ease,left .3s ease;/*苹果*/
+    -moz-transition: opacity .3s ease,left .3s ease;/*火狐*/
+    -ms-transition: opacity .3s ease,left .3s ease;/*ie8以后的*/
+    -o-transition: opacity .3s ease,left .3s ease;/*欧鹏*/
+    transition: opacity .3s ease,left .3s ease;
+    opacity: 0;
+    visibility: hidden;
+    /*引起闪现问题*/
+}
+
+#side .content:hover .vip {
+    left: -90px;
+    opacity: 1;
+    visibility: visible;
+}
+
+#side .arrow {
+    width: 10px;
+    height: 10px;
+    background: #999999;
+    position: absolute;
+    right: -5px;
+    top: 10px;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.money{
+    top: 300px;
+}
+
+/* side 结束 */
+
+
+
+/*side结束*/
 #all{
     width: 1230px;
     margin: 0 auto;
@@ -178,4 +262,49 @@ img{
 
 .search img{
     margin-left:-45px;
+    float: left;
+}
+#search {
+    position: relative;
+    top: 40px;
+    left: 60px;
+}
+#search input{
+    border: 2px solid #FF0036;
+    height: 26px;
+    width: 490px;
+    outline:none;
+    padding: 5px;
+    font-size: 15px;
+}
+#search input:focus::-webkit-input-placeholder {color:#ccc;}
+
+#search button{
+    height: 40px;
+    width: 130px;
+    background: #ff0036;
+    border: 2px solid #FF0036;
+    color: white;
+    font-size: 18px;
+    font-weight:700;
+    cursor: pointer;
+    position: relative;
+    top: 2px;
+    left: -5px;
+    letter-spacing: 5px;
+}
+.sth{
+    position: relative;
+    top: 44px;
+    left:50px;
+}
+.sth li{
+    display: inline;
+    padding: 0 10px;
+    border-right: 1px solid #999999;
+
+}
+.sth a{
+    text-decoration: none;
+    font-size: 14px;
 }
