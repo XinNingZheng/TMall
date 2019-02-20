@@ -1,3 +1,21 @@
+@font-face {
+    font-family: 'iconfont';
+    src: url('font/iconfont.eot');
+    src: url('font/iconfont.eot?#iefix') format('embedded-opentype'),
+    url('font/iconfont.woff2') format('woff2'),
+    url('font/iconfont.woff') format('woff'),
+    url('font/iconfont.ttf') format('truetype'),
+    url('font/iconfont.svg#iconfont') format('svg');
+}
+@font-face {
+    font-family: 'iconfont';  /* project id 1052158 */
+    src: url('//at.alicdn.com/t/font_1052158_5z69qpulf03.eot');
+    src: url('//at.alicdn.com/t/font_1052158_5z69qpulf03.eot?#iefix') format('embedded-opentype'),
+    url('//at.alicdn.com/t/font_1052158_5z69qpulf03.woff2') format('woff2'),
+    url('//at.alicdn.com/t/font_1052158_5z69qpulf03.woff') format('woff'),
+    url('//at.alicdn.com/t/font_1052158_5z69qpulf03.ttf') format('truetype'),
+    url('//at.alicdn.com/t/font_1052158_5z69qpulf03.svg#iconfont') format('svg');
+}
 *{
     margin: 0;
     padding: 0;
@@ -103,6 +121,8 @@ img{
     border: 1px solid #f2f2f2;
     border-top: white;
     padding: 5px;
+    z-index:10;
+    background: #fff;
 
 }
 .my a{
@@ -147,7 +167,7 @@ img{
     border-color: #fff transparent transparent transparent;
 }
 .shop{
-    left:294px;
+    left:301px;
     /*padding:5px;*/
     width: 120px;
     color: #666666;
@@ -167,11 +187,11 @@ img{
 }
 
 .nav{
-    width: 1230px;
+    width: 1222px;
     margin: 0 auto;
     height: 157px;
     position: absolute;
-    left: -730px;
+    left: -715px;
     z-index: 100;
 }
 /*head结束*/
@@ -254,15 +274,21 @@ img{
 
 
 
-/*side结束*/
+/**/
 #all{
     width: 1230px;
     margin: 0 auto;
 }
 
+/*search开始*/
+.search{
+    position: relative;
+    height: 130px;
+}
 .search img{
     margin-left:-45px;
     float: left;
+    display: inline-block;
 }
 #search {
     position: relative;
@@ -308,3 +334,116 @@ img{
     text-decoration: none;
     font-size: 14px;
 }
+
+/*search结束*/
+
+/*inner开始*/
+.inner{
+    margin-top: 3px;
+    height: 36px;
+    line-height: 36px;
+    width: 1230px;
+    position: relative;
+    bottom: 0;
+    border-bottom: 2px solid red;
+}
+.inner-left{
+    width: 187px;
+    height: 36px;
+    color: #fff;
+    background: #ff0036;
+    font-size: 16px;
+    font-weight: 700;
+    float: left;
+    padding-left: 13px;
+}
+.white{
+    font-family: "iconfont" !important;
+    color: white;
+    font-weight: lighter;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    margin-right: 8px;
+}
+.inner-right img{
+    width: 100px;
+    display: inline-block;
+
+}
+.inner-right a{
+    height: 35px;
+    text-decoration: none;
+    padding: 0 8px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 36px;
+    float: left;
+    color: #333;
+}
+.inner-right a:hover{
+    color:#FF0036;
+}
+/*inner结束*/
+
+/*banner开始*/
+#banner{
+    height: 500px;
+}
+#side-menu{
+    float: left;
+    width: 200px;
+    background: rgba(0, 0, 0, 0.72);
+}
+#side-menu a{
+    color:#fff;
+    text-decoration: none;
+    font-size: 14px;
+
+
+}
+#side-menu li{
+    height: 31px;
+    line-height: 31px;
+    padding-left: 12px;
+}
+
+#side-menu li:hover{
+    background: #fff;
+}
+
+#side-menu li:hover .pink{
+    color: #e54077!important;
+}
+#side-menu li:hover .blue{
+    color: #427def;
+}
+#side-menu li:hover .purple{
+    color: #6347ed;
+}
+#side-menu li:hover .lightred{
+    color: #fa5c5c;
+}
+#side-menu li:hover .red{
+    color: #dd2727;
+}
+#side-menu li:hover .yellow{
+    color: #f7a831;
+}
+#side-menu li:hover .green{
+    color: #3bc7b0;
+}
+
+#side-menu li:hover a{
+    font-weight: bold;
+ }
+
+.iconfont {
+    font-family: "iconfont" !important;
+    font-size: 16px;
+    font-style: normal;
+    color: rgba(255, 255, 255, 0.4);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/*banner结束*/
