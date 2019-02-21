@@ -345,7 +345,6 @@ img{
     width: 1230px;
     position: relative;
     bottom: 0;
-    border-bottom: 2px solid red;
 }
 .inner-left{
     width: 187px;
@@ -388,8 +387,15 @@ img{
 /*banner开始*/
 #banner{
     height: 500px;
+    background: #fd5957;
+    position: relative;
+    display: block;
+    z-index: -1;
+    border-top: 2px solid #FF0036;
 }
 #side-menu{
+    position: absolute;
+    left: 337px;
     float: left;
     width: 200px;
     background: rgba(0, 0, 0, 0.72);
@@ -402,8 +408,8 @@ img{
 
 }
 #side-menu li{
-    height: 31px;
-    line-height: 31px;
+    height: 31.2px;
+    line-height: 31.2px;
     padding-left: 12px;
 }
 
@@ -446,4 +452,51 @@ img{
     -moz-osx-font-smoothing: grayscale;
 }
 
+#banner #wrapper {
+    height: 500px;
+    background: url(img/banner01.webp) no-repeat;
+    background-position:center center;
+    margin: 0 auto;
+}
+
+#banner .banner-nav {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+#banner .banner-nav li {
+    width: 25px;
+    height: 5px;
+    background: rgba(0, 0, 0, 0.31);
+    float: left;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+#banner .banner-nav .selected {
+    background: #fff;
+}
 /*banner结束*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
